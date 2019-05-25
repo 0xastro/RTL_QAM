@@ -11,3 +11,4 @@ The project is designed using VHDL to realise the M-QAM modulation.
 - DDFS [Sinsoidal Oscillator [sin and cos] ]
 - Integrator
 - LFSR [Linear Phase Shift Register]
+- LATCH [4069]
