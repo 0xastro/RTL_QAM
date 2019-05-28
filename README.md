@@ -14,8 +14,6 @@ The project is designed using VHDL to realise the M-QAM modulation.
 - LATCH [4069]
 
 ### TODO:
-- Update the Phase Difference for both carriers
-- [FIX] the addition process
 - [ADD] GNURadio and Matlab TestFiles
 - [ADD] Documentation
 - [DO] Synthesis on Xilinx and Report the Utilized resources, the critical path, and the Maximum Operating Frequency.
