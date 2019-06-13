@@ -1,12 +1,23 @@
+--*********************************************************
+---------------------------------------------------------
+-- DDFS: Direct Digital Frequency Synthesizer TESSTBENCH
+---------------------------------------------------------
+-- Module: tb_DDFS to test ddfs module
+-- Author: Astro
+-- Project: QAM Modulation
+-- Delievered to: Digital System Design
+-- Supervised by: Prof. Luca Fanucci
+---------------------------------------------------------
+--*********************************************************
 library IEEE;
 use IEEE.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-ENTITY DDFS_tb is
-end DDFS_tb;
+ENTITY tb_DDFS is
+end tb_DDFS;
    
 
-ARCHITECTURE testbench of DDFS_tb is
+ARCHITECTURE testbench of tb_DDFS is
 
 	COMPONENT ddfs is 
 		port( 

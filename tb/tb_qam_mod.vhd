@@ -1,13 +1,31 @@
+--*********************************************************
+---------------------------------------------------------
+-- QAM Modulator: Modulator of 4-QAM TESTBENCH
+---------------------------------------------------------
+-- We have bounded test cases assossiated with the 
+-- modulation order
+-- test0: 00
+-- test0: 01
+-- test0: 10
+-- test0: 11
+---------------------------------------------------------
+-- Module: tb_qam_mod.vhd to test qam_mod.vhd
+-- Author: Astro
+-- Project: QAM Modulation
+-- Delievered to: Digital System Design
+-- Supervised by: Prof. Luca Fanucci
+---------------------------------------------------------
+--*********************************************************
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;
 USE IEEE.MATH_REAL.ALL;
 
-ENTITY tb_qam is
-END tb_qam;
+ENTITY tb_qam_mod is
+END tb_qam_mod;
 
 
-ARCHITECTURE testbench of tb_qam is
+ARCHITECTURE testbench of tb_qam_mod is
 
 component qam_mod is
 	port (
