@@ -1,3 +1,15 @@
+--*********************************************************
+---------------------------------------------------------
+-- FullAdder: N- Ripple Carry Adder Module 
+---------------------------------------------------------
+-- Module: FA_N.vhd
+-- Author: Astro
+-- Project: QAM Modulation
+-- Delievered to: Digital System Design
+-- Supervised by: Prof. Luca Fanucci
+---------------------------------------------------------
+--*********************************************************
+
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;

@@ -1,5 +1,6 @@
+--*********************************************************
 ---------------------------------------------------------
--- QAM MAPPER
+-- QAM MAPPER: Constellation mapper of 4-QAM
 ---------------------------------------------------------
 -- we want to have one single change of bits from one symbol to the other;
 -- thus, using fixed point number[gray code] representation {00, 01, 11, 10} 
@@ -10,9 +11,17 @@
 -- {10}			|	{+1-J}
 -- {11}			|	{-1-J}
 ---------------------------------------------------------
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.NUMERIC_STD.ALL;
+-- Module: qam_mapper
+-- Author: Astro
+-- Project: QAM Modulation
+-- Delievered to: Digital System Design
+-- Supervised by: Prof. Luca Fanucci
+---------------------------------------------------------
+--*********************************************************
+
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
 
 
 ENTITY qam_mapper is
@@ -45,20 +54,20 @@ ARCHITECTURE Behaviourl of qam_mapper is
 
 	-- I array
 	-- to_signed: Converts an INTEGER to a SIGNED vector of the specified SIZE.
-	constant I_data	: constellation := (
+	CONSTANT I_data	: constellation := (
 		to_signed(1,2),
 		to_signed(-1,2),
 		to_signed(1,2),
 		to_signed(-1,2)
 		);
 	-- Q array
-	constant Q_data	: constellation := (
+	CONSTANT Q_data	: constellation := (
 		to_signed(1,2),
 		to_signed(1,2),
 		to_signed(-1,2),
 		to_signed(-1,2)
 		); 
-	signal bits_in_unsigned : unsigned (1 downto 0);
+	SIGNAL bits_in_unsigned : unsigned (1 downto 0);
 
 begin
 	-- to get from std_logic_vector to integer: > we go to unsigned then to integer 
@@ -81,4 +90,4 @@ begin
 	end process p_mapper_qam;
 
 
-end Behaviourl;
+END Behaviourl;

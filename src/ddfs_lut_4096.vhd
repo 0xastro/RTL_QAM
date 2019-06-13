@@ -1,8 +1,20 @@
+--*********************************************************
+---------------------------------------------------------
+-- Sinsoidal Lutch 4096x12
+-- Generated using Matlab
+---------------------------------------------------------
+-- Module: ddfs_lut_4096
+-- Author: Astro
+-- Project: QAM Modulation
+-- Delievered to: Digital System Design
+-- Supervised by: Prof. Luca Fanucci
+---------------------------------------------------------
+--*********************************************************
+
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;
 USE IEEE.MATH_REAL.ALL;
-
 
 
 ENTITY ddfs_lut_4096 is 
@@ -21,9 +33,8 @@ ARCHITECTURE bhv of ddfs_lut_4096 is
 TYPE int_array is ARRAY (natural range <>) of integer;            -- int_array type declaration
 
 
-
 CONSTANT lut : int_array := (                                     -- Look up table cells/arrays
-		0,
+            0,
             0,
             0,
             0,
@@ -4121,12 +4132,11 @@ CONSTANT lut : int_array := (                                     -- Look up tab
             0);
 
    SIGNAL lut_address_index : integer range 0 to 4095;                              -- LUT address converted to integer to be used ad array index
-	
-	BEGIN
+      
+      BEGIN
    
    lut_address_index <= to_integer(unsigned(address));                              -- Converting the lut address into an integer to be usable as array index
    
    dds_out <= std_logic_vector(to_signed(lut(lut_address_index),6));                -- Selecting the lut cell depending on the index lut_address_index
-
 
 END bhv;

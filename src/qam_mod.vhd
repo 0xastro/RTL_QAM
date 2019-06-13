@@ -1,3 +1,19 @@
+--*********************************************************
+---------------------------------------------------------
+-- QAM Modulator: Modulation of 4-QAM
+---------------------------------------------------------
+-- The system takes the input I and Q symbols each 2 bits
+-- and produce The modulated waveforms for each the I and
+-- Q components.
+---------------------------------------------------------
+-- Module: qam_mod.vhd
+-- Author: Astro
+-- Project: QAM Modulation
+-- Delievered to: Digital System Design
+-- Supervised by: Prof. Luca Fanucci
+---------------------------------------------------------
+--*********************************************************
+
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;

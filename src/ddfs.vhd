@@ -1,3 +1,15 @@
+--*********************************************************
+---------------------------------------------------------
+-- DDFS: Direct Digital Frequency Synthesizer
+---------------------------------------------------------
+-- Module: ddfs
+-- Author: Astro
+-- Project: QAM Modulation
+-- Delievered to: Digital System Design
+-- Supervised by: Prof. Luca Fanucci
+---------------------------------------------------------
+--*********************************************************
+
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;
@@ -13,7 +25,7 @@ ENTITY ddfs is
 		out_sinWave : out std_logic_vector(5 downto 0);		-- output waveform sin
 		out_cosWave : out std_logic_vector(5 downto 0)		-- output waveform cos
 		);
-end ddfs;
+END ddfs;
 
 
 ------------------------------------------------------------------------------------------
@@ -35,9 +47,8 @@ ARCHITECTURE struct of ddfs is
 	SIGNAL sine_out 		: std_logic_vector(5 downto 0);
 
 	SIGNAL cos_out 			: std_logic_vector(5 downto 0);
-	SIGNAL test 			: std_logic_vector(5 downto 0);
 	-- RESERVED
-	SIGNAL start_phase 		: std_logic_vector(11 downto 0);
+	--SIGNAL start_phase 		: std_logic_vector(11 downto 0);
 
 	--****************************************************************
     -- @Used With Optimization Configuration
@@ -63,7 +74,7 @@ ARCHITECTURE struct of ddfs is
 			phase_sin    	: out std_logic_vector(11 downto 0);	-- wave1: sin Oscillator
 			phase_cos    	: out std_logic_vector(11 downto 0)		-- wave2: cos Oscillator
 			);
-	end COMPONENT PhaseGenerator;
+	END COMPONENT PhaseGenerator;
 ------------------------------------------------------------------------------------------
 
     COMPONENT FA_N 											--------------------
@@ -75,15 +86,15 @@ ARCHITECTURE struct of ddfs is
             o   : out  std_logic_vector(N - 1 downto 0);			-- Output of the full-adder
             c_o : out std_logic 									-- Carry output
             );
-      end COMPONENT FA_N;
+    END COMPONENT FA_N;
 ------------------------------------------------------------------------------------------
     																--------------------
-   COMPONENT ddfs_lut_4096 is 										-- Sinsoidal LUTCH/ROM
+    COMPONENT ddfs_lut_4096 is 										-- Sinsoidal LUTCH/ROM
    		port(														--------------------
    			address : in std_logic_vector(11 downto 0);				-- lut address/Index
 			dds_out : out std_logic_vector(5 downto 0)				-- lut output (wave values)
 			);
-   end COMPONENT;
+    END COMPONENT;
 ------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------
 -- END EMBEDDING AND DECLARING
@@ -158,4 +169,4 @@ ARCHITECTURE struct of ddfs is
       -- Mapping the output
 		out_sinWave <= sine_out;
 		out_cosWave <= cos_out;
-end struct;
+END struct;
