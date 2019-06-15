@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jun 14 16:55:29 2019
+# Process ID: 9984
+# Current directory: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1
+# Command line: vivado.exe -log QAM_Hierarchical.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source QAM_Hierarchical.tcl
+# Log file: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1/QAM_Hierarchical.vds
+# Journal file: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source QAM_Hierarchical.tcl -notrace

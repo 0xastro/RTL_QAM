@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/synth/timing/xsim/tb_QAM_Hierarchical_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PhaseGenerator
+INFO: [VRFC 10-311] analyzing module QAM_Hierarchical
+INFO: [VRFC 10-311] analyzing module ddfs
+INFO: [VRFC 10-311] analyzing module ddfs_lut_4096
+INFO: [VRFC 10-311] analyzing module ddfs_lut_4096_0
+INFO: [VRFC 10-311] analyzing module qam_mapper
+INFO: [VRFC 10-311] analyzing module qam_mod
+INFO: [VRFC 10-311] analyzing module glbl

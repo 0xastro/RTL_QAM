@@ -1,0 +1,201 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jun 14 14:35:42 2019
+# Process ID: 6456
+# Current directory: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6980 C:\Users\rewal\Desktop\RTL_QAM-master\QAM_Vivado\QAM_Vivado.xpr
+# Log file: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/vivado.log
+# Journal file: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+create_clock -period 1.672 -name pll_clk_614 -waveform {0.000 0.836} [get_ports i_clk]
+file mkdir C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/constrs_1/new
+close [ open C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/constrs_1/new/modulator_constraint.xdc w ]
+add_files -fileset constrs_1 C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/constrs_1/new/modulator_constraint.xdc
+set_property target_constrs_file C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/constrs_1/new/modulator_constraint.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+report_utilization -name utilization_1
+report_clock_networks -name {network_1}
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing(1)
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_3
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+report_utilization -file C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/timing_report.txt -name utilization_2
+report_clock_interaction -delay_type min_max -significant_digits 3 -name timing_4
+report_utilization -name utilization_3
+report_clock_networks -name {network_2}
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_4
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+set_property is_loc_fixed true [get_ports [list  {input_stream[1]} {input_stream[0]}]]
+set_property is_loc_fixed true [get_ports [list  {input_stream[1]} {input_stream[0]}]]
+set_property is_loc_fixed true [get_ports [list  {i_fcw[11]} {i_fcw[10]} {i_fcw[9]} {i_fcw[8]} {i_fcw[7]} {i_fcw[6]} {i_fcw[5]} {i_fcw[4]} {i_fcw[3]} {i_fcw[2]} {i_fcw[1]} {i_fcw[0]}]]
+set_property is_loc_fixed true [get_ports [list  {input_stream[1]} {input_stream[0]}]]
+set_property is_loc_fixed true [get_ports [list  {PASSBAND[7]} {PASSBAND[6]} {PASSBAND[5]} {PASSBAND[4]} {PASSBAND[3]} {PASSBAND[2]} {PASSBAND[1]} {PASSBAND[0]}]]
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_simulation
+source QAM_Hierarchical.tcl
+add_bp {C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mapper.vhd} 83
+remove_bps -file {C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mapper.vhd} -line 83
+current_design rtl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+report_power -name {power_1}
+report_utilization -name utilization_1
+report_utilization -file C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/timing_report_Implementation.txt -name utilization_2
+current_design synth_1
+current_design impl_1
+report_methodology -name ultrafast_methodology_1 -rpx C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/ultrafast_methodology_1.rpx -checks {PDRC-204 PDRC-190 TIMING-43 TIMING-42 TIMING-41 TIMING-40 TIMING-39 TIMING-38 TIMING-37 TIMING-36 TIMING-35 TIMING-34 TIMING-33 TIMING-32 TIMING-31 TIMING-30 TIMING-29 TIMING-28 TIMING-27 TIMING-26 TIMING-25 TIMING-24 TIMING-23 TIMING-22 TIMING-21 TIMING-20 TIMING-19 TIMING-18 TIMING-17 TIMING-16 TIMING-15 TIMING-14 TIMING-13 TIMING-12 TIMING-11 TIMING-10 TIMING-9 TIMING-8 TIMING-7 TIMING-6 TIMING-5 TIMING-4 TIMING-3 TIMING-2 TIMING-1 XDCV-2 XDCV-1 XDCH-2 XDCH-1 XDCC-8 XDCC-7 XDCC-6 XDCC-5 XDCC-4 XDCC-3 XDCC-2 XDCC-1 XDCB-5 XDCB-4 XDCB-3 XDCB-2 XDCB-1 CLKC-54 CLKC-53 CLKC-9 CLKC-5 CLKC-38 CLKC-37 CLKC-36 CLKC-35 CLKC-4 CLKC-18 CLKC-3 CLKC-2 CLKC-1 REQP-1959 LUTAR-1 HPDR-1 NTCN-1 CKLD-2 CKLD-1 DPIR-1 CKBF-1 SYNTH-14 SYNTH-13 SYNTH-12 SYNTH-11 SYNTH-10 SYNTH-9 SYNTH-16 SYNTH-15 SYNTH-6 SYNTH-5 SYNTH-4}
+current_design synth_1
+report_power -name {power_1}
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+current_design impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_3
+current_design synth_1
+current_design impl_1
+current_design synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+current_design impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_4
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_5
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_6
+current_design synth_1
+close_design
+launch_simulation -mode post-synthesis -type functional
+source QAM_Hierarchical.tcl
+current_sim simulation_1
+close_sim
+launch_simulation
+source QAM_Hierarchical.tcl
+current_design impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_7
+save_constraints
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+current_design synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_3
+refresh_design
+save_constraints
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+current_design impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_8
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+current_design synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+current_design impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_9
+report_power -name {power_2}
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+current_design synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_3
+current_design impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_10
+report_power -name {power_3}
+current_design synth_1
+refresh_design
+save_constraints
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+current_design synth_1
+report_power -name {power_1}
+add_files -norecurse -scan_for_includes C:/Users/rewal/Desktop/RTL_QAM-master/ghdl_src_DUT/tb_QAM_Hierarchical.vhd
+import_files -norecurse C:/Users/rewal/Desktop/RTL_QAM-master/ghdl_src_DUT/tb_QAM_Hierarchical.vhd
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source QAM_Hierarchical.tcl
+update_compile_order -fileset sources_1
+launch_simulation -mode post-implementation -type functional
+current_design synth_1
+close_design
+launch_simulation -mode post-synthesis -type timing
+export_ip_user_files -of_objects  [get_files C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/tb_QAM_Hierarchical.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/tb_QAM_Hierarchical.vhd
+update_compile_order -fileset sources_1
+launch_simulation -mode post-implementation -type timing
+source QAM_Hierarchical.tcl
+create_wave_config
+close_sim
+current_sim simulation_4
+close_sim
+close_sim

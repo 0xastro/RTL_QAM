@@ -1,0 +1,7 @@
+Running: xsim.dir/QAM_Hierarchical_behav/xsimk.exe -simmode gui -wdb QAM_Hierarchical_behav.wdb -simrunnum 0 -socket 57232
+Design successfully loaded
+Design Loading Memory Usage: 5116 KB (Peak: 5116 KB)
+Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 5720 KB (Peak: 5720 KB)
+Simulation CPU Usage: 62 ms

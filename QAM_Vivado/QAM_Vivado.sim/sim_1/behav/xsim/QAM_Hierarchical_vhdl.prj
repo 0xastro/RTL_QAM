@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd" \
+"../../../../QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/PhaseGenerator.vhd" \
+"../../../../QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd" \
+"../../../../QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs_lut_4096.vhd" \
+"../../../../QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd" \
+"../../../../QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mapper.vhd" \
+"../../../../QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd" \
+"../../../../QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/IQ_Adder.vhd" \
+
+# Do not sort compile order
+nosort

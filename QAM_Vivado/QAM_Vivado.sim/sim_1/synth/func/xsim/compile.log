@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/synth/func/xsim/QAM_Hierarchical_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PhaseGenerator'
+INFO: [VRFC 10-3107] analyzing entity 'ddfs_lut_4096'
+INFO: [VRFC 10-3107] analyzing entity 'ddfs_lut_4096_0'
+INFO: [VRFC 10-3107] analyzing entity 'qam_mapper'
+INFO: [VRFC 10-3107] analyzing entity 'ddfs'
+INFO: [VRFC 10-3107] analyzing entity 'qam_mod'
+INFO: [VRFC 10-3107] analyzing entity 'QAM_Hierarchical'

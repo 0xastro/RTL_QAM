@@ -1,0 +1,1315 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jun 14 14:35:42 2019
+# Process ID: 6456
+# Current directory: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6980 C:\Users\rewal\Desktop\RTL_QAM-master\QAM_Vivado\QAM_Vivado.xpr
+# Log file: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/vivado.log
+# Journal file: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:17 . Memory (MB): peak = 760.957 ; gain = 171.320
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: QAM_Hierarchical
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 820.449 ; gain = 56.391
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'QAM_Hierarchical' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/IQ_Adder.vhd:31]
+INFO: [Synth 8-3491] module 'qam_mod' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:11' bound to instance 'u_qam_mod' of component 'qam_mod' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/IQ_Adder.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'qam_mod' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:26]
+INFO: [Synth 8-3491] module 'qam_mapper' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mapper.vhd:27' bound to instance 'u_mapper_qam' of component 'qam_mapper' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'qam_mapper' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mapper.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'qam_mapper' (1#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mapper.vhd:37]
+INFO: [Synth 8-3491] module 'ddfs' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd:19' bound to instance 'u_ddfs_osc' of component 'ddfs' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'ddfs' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd:34]
+INFO: [Synth 8-3491] module 'PhaseGenerator' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/PhaseGenerator.vhd:23' bound to instance 'PHASE_ACCUMLATOR' of component 'PhaseGenerator' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'PhaseGenerator' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/PhaseGenerator.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'PhaseGenerator' (2#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/PhaseGenerator.vhd:38]
+INFO: [Synth 8-3491] module 'ddfs_lut_4096' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs_lut_4096.vhd:20' bound to instance 'LUT_4096_SIN' of component 'ddfs_lut_4096' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'ddfs_lut_4096' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs_lut_4096.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'ddfs_lut_4096' (3#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs_lut_4096.vhd:28]
+INFO: [Synth 8-3491] module 'ddfs_lut_4096' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs_lut_4096.vhd:20' bound to instance 'LUT_4096_COS' of component 'ddfs_lut_4096' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd:129]
+INFO: [Synth 8-256] done synthesizing module 'ddfs' (4#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd:34]
+WARNING: [Synth 8-3848] Net phase_ctr in module/entity qam_mod does not have driver. [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'qam_mod' (5#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:26]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'FA_N' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:7' bound to instance 'u_IQ_Adder' of component 'FA_N' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/IQ_Adder.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'FA_N' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:18]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'fullAdder' (6#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:18]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'FA_N' (7#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'QAM_Hierarchical' (8#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/IQ_Adder.vhd:31]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[11]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[10]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[9]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[8]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[7]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[6]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[5]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[4]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[3]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[2]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[1]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 875.887 ; gain = 111.828
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[11] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[10] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[9] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[8] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[7] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[6] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[5] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[4] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[3] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[2] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[1] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[0] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 875.887 ; gain = 111.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 875.887 ; gain = 111.828
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1207.664 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:33 ; elapsed = 00:00:18 . Memory (MB): peak = 1268.348 ; gain = 504.289
+35 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:18 . Memory (MB): peak = 1268.348 ; gain = 504.289
+launch_runs synth_1 -jobs 4
+[Fri Jun 14 14:38:45 2019] Launched synth_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1303.719 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+create_clock -period 1.672 -name pll_clk_614 -waveform {0.000 0.836} [get_ports i_clk]
+file mkdir C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/constrs_1/new
+close [ open C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/constrs_1/new/modulator_constraint.xdc w ]
+add_files -fileset constrs_1 C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/constrs_1/new/modulator_constraint.xdc
+set_property target_constrs_file C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/constrs_1/new/modulator_constraint.xdc [current_fileset -constrset]
+save_constraints -force
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1864.230 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Jun 14 14:51:15 2019] Launched synth_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1/runme.log
+report_utilization -name utilization_1
+report_clock_networks -name {network_1}
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Jun 14 14:55:55 2019] Launched synth_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1/runme.log
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+save_constraints -force
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2041.336 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Jun 14 14:58:11 2019] Launched synth_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1/runme.log
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing(1)
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+save_constraints -force
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2041.484 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Jun 14 14:59:58 2019] Launched synth_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1/runme.log
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+save_constraints -force
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2044.141 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Jun 14 15:02:10 2019] Launched synth_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1/runme.log
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_3
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jun 14 15:06:13 2019] Launched impl_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Jun 14 15:07:19 2019] Launched synth_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1/runme.log
+report_utilization -file C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/timing_report.txt -name utilization_2
+report_clock_interaction -delay_type min_max -significant_digits 3 -name timing_4
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_utilization -name utilization_3
+report_clock_networks -name {network_2}
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_4
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jun 14 15:18:17 2019] Launched impl_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/impl_1/runme.log
+set_property is_loc_fixed true [get_ports [list  {input_stream[1]} {input_stream[0]}]]
+set_property is_loc_fixed true [get_ports [list  {input_stream[1]} {input_stream[0]}]]
+set_property is_loc_fixed true [get_ports [list  {i_fcw[11]} {i_fcw[10]} {i_fcw[9]} {i_fcw[8]} {i_fcw[7]} {i_fcw[6]} {i_fcw[5]} {i_fcw[4]} {i_fcw[3]} {i_fcw[2]} {i_fcw[1]} {i_fcw[0]}]]
+set_property is_loc_fixed true [get_ports [list  {input_stream[1]} {input_stream[0]}]]
+set_property is_loc_fixed true [get_ports [list  {PASSBAND[7]} {PASSBAND[6]} {PASSBAND[5]} {PASSBAND[4]} {PASSBAND[3]} {PASSBAND[2]} {PASSBAND[1]} {PASSBAND[0]}]]
+refresh_design
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/constrs_1/new/modulator_constraint.xdc]
+Finished Parsing XDC File [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/constrs_1/new/modulator_constraint.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2182.793 ; gain = 8.664
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Jun 14 15:22:49 2019] Launched synth_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jun 14 15:23:44 2019] Launched impl_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/impl_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'QAM_Hierarchical' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj QAM_Hierarchical_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FA_N'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/PhaseGenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PhaseGenerator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ddfs'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs_lut_4096.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ddfs_lut_4096'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fullAdder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'qam_mapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'qam_mod'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/IQ_Adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'QAM_Hierarchical'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto edcd49cc49ab4e42907617f62b747db4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot QAM_Hierarchical_behav xil_defaultlib.QAM_Hierarchical -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behaviourl of entity xil_defaultlib.qam_mapper [qam_mapper_default]
+Compiling architecture arch of entity xil_defaultlib.PhaseGenerator [phasegenerator_default]
+Compiling architecture bhv of entity xil_defaultlib.ddfs_lut_4096 [ddfs_lut_4096_default]
+Compiling architecture struct of entity xil_defaultlib.ddfs [ddfs_default]
+Compiling architecture rtl of entity xil_defaultlib.qam_mod [qam_mod_default]
+Compiling architecture data_flow of entity xil_defaultlib.fullAdder [fulladder_default]
+Compiling architecture struct of entity xil_defaultlib.FA_N [\FA_N(n=8)\]
+Compiling architecture behaviourl of entity xil_defaultlib.qam_hierarchical
+Built simulation snapshot QAM_Hierarchical_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/behav/xsim/xsim.dir/QAM_Hierarchical_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/behav/xsim/xsim.dir/QAM_Hierarchical_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jun 14 15:39:50 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Jun 14 15:39:50 2019...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2182.793 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "QAM_Hierarchical_behav -key {Behavioral:sim_1:Functional:QAM_Hierarchical} -tclbatch {QAM_Hierarchical.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source QAM_Hierarchical.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'QAM_Hierarchical_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2182.793 ; gain = 0.000
+add_bp {C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mapper.vhd} 83
+remove_bps -file {C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mapper.vhd} -line 83
+current_design rtl_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2182.793 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'QAM_Hierarchical' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/IQ_Adder.vhd:31]
+INFO: [Synth 8-3491] module 'qam_mod' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:11' bound to instance 'u_qam_mod' of component 'qam_mod' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/IQ_Adder.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'qam_mod' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:26]
+INFO: [Synth 8-3491] module 'qam_mapper' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mapper.vhd:27' bound to instance 'u_mapper_qam' of component 'qam_mapper' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'qam_mapper' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mapper.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'qam_mapper' (1#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mapper.vhd:37]
+INFO: [Synth 8-3491] module 'ddfs' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd:19' bound to instance 'u_ddfs_osc' of component 'ddfs' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'ddfs' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd:34]
+INFO: [Synth 8-3491] module 'PhaseGenerator' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/PhaseGenerator.vhd:23' bound to instance 'PHASE_ACCUMLATOR' of component 'PhaseGenerator' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'PhaseGenerator' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/PhaseGenerator.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'PhaseGenerator' (2#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/PhaseGenerator.vhd:38]
+INFO: [Synth 8-3491] module 'ddfs_lut_4096' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs_lut_4096.vhd:20' bound to instance 'LUT_4096_SIN' of component 'ddfs_lut_4096' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'ddfs_lut_4096' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs_lut_4096.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'ddfs_lut_4096' (3#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs_lut_4096.vhd:28]
+INFO: [Synth 8-3491] module 'ddfs_lut_4096' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs_lut_4096.vhd:20' bound to instance 'LUT_4096_COS' of component 'ddfs_lut_4096' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd:129]
+INFO: [Synth 8-256] done synthesizing module 'ddfs' (4#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd:34]
+WARNING: [Synth 8-3848] Net phase_ctr in module/entity qam_mod does not have driver. [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'qam_mod' (5#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:26]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'FA_N' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:7' bound to instance 'u_IQ_Adder' of component 'FA_N' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/IQ_Adder.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'FA_N' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:18]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'fullAdder' (6#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:18]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'FA_N' (7#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'QAM_Hierarchical' (8#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/IQ_Adder.vhd:31]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[11]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[10]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[9]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[8]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[7]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[6]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[5]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[4]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[3]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[2]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[1]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2182.793 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[11] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[10] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[9] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[8] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[7] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[6] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[5] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[4] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[3] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[2] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[1] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[0] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2182.793 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2182.793 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/constrs_1/new/modulator_constraint.xdc]
+Finished Parsing XDC File [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/constrs_1/new/modulator_constraint.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2202.602 ; gain = 19.809
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Fri Jun 14 15:41:23 2019] Launched synth_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jun 14 15:42:16 2019] Launched impl_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/impl_1/runme.log
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2202.602 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'QAM_Hierarchical' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/IQ_Adder.vhd:31]
+INFO: [Synth 8-3491] module 'qam_mod' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:11' bound to instance 'u_qam_mod' of component 'qam_mod' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/IQ_Adder.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'qam_mod' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:26]
+INFO: [Synth 8-3491] module 'qam_mapper' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mapper.vhd:27' bound to instance 'u_mapper_qam' of component 'qam_mapper' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'qam_mapper' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mapper.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'qam_mapper' (1#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mapper.vhd:37]
+INFO: [Synth 8-3491] module 'ddfs' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd:19' bound to instance 'u_ddfs_osc' of component 'ddfs' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'ddfs' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd:34]
+INFO: [Synth 8-3491] module 'PhaseGenerator' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/PhaseGenerator.vhd:23' bound to instance 'PHASE_ACCUMLATOR' of component 'PhaseGenerator' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'PhaseGenerator' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/PhaseGenerator.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'PhaseGenerator' (2#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/PhaseGenerator.vhd:38]
+INFO: [Synth 8-3491] module 'ddfs_lut_4096' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs_lut_4096.vhd:20' bound to instance 'LUT_4096_SIN' of component 'ddfs_lut_4096' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'ddfs_lut_4096' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs_lut_4096.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'ddfs_lut_4096' (3#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs_lut_4096.vhd:28]
+INFO: [Synth 8-3491] module 'ddfs_lut_4096' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs_lut_4096.vhd:20' bound to instance 'LUT_4096_COS' of component 'ddfs_lut_4096' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd:129]
+INFO: [Synth 8-256] done synthesizing module 'ddfs' (4#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd:34]
+WARNING: [Synth 8-3848] Net phase_ctr in module/entity qam_mod does not have driver. [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'qam_mod' (5#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:26]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'FA_N' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:7' bound to instance 'u_IQ_Adder' of component 'FA_N' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/IQ_Adder.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'FA_N' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:18]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'fullAdder' (6#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:18]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'FA_N' (7#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'QAM_Hierarchical' (8#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/IQ_Adder.vhd:31]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[11]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[10]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[9]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[8]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[7]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[6]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[5]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[4]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[3]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[2]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[1]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2202.602 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[11] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[10] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[9] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[8] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[7] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[6] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[5] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[4] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[3] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[2] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[1] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[0] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2202.602 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2202.602 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/constrs_1/new/modulator_constraint.xdc]
+Finished Parsing XDC File [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/constrs_1/new/modulator_constraint.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2259.070 ; gain = 56.469
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Fri Jun 14 15:46:15 2019] Launched synth_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jun 14 15:47:16 2019] Launched impl_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 2322.512 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 2322.512 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2322.512 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_power -name {power_1}
+Command: report_power -name power_1
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_utilization -name utilization_1
+report_utilization -file C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/timing_report_Implementation.txt -name utilization_2
+current_design synth_1
+current_design impl_1
+report_methodology -name ultrafast_methodology_1 -rpx C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/ultrafast_methodology_1.rpx -checks {PDRC-204 PDRC-190 TIMING-43 TIMING-42 TIMING-41 TIMING-40 TIMING-39 TIMING-38 TIMING-37 TIMING-36 TIMING-35 TIMING-34 TIMING-33 TIMING-32 TIMING-31 TIMING-30 TIMING-29 TIMING-28 TIMING-27 TIMING-26 TIMING-25 TIMING-24 TIMING-23 TIMING-22 TIMING-21 TIMING-20 TIMING-19 TIMING-18 TIMING-17 TIMING-16 TIMING-15 TIMING-14 TIMING-13 TIMING-12 TIMING-11 TIMING-10 TIMING-9 TIMING-8 TIMING-7 TIMING-6 TIMING-5 TIMING-4 TIMING-3 TIMING-2 TIMING-1 XDCV-2 XDCV-1 XDCH-2 XDCH-1 XDCC-8 XDCC-7 XDCC-6 XDCC-5 XDCC-4 XDCC-3 XDCC-2 XDCC-1 XDCB-5 XDCB-4 XDCB-3 XDCB-2 XDCB-1 CLKC-54 CLKC-53 CLKC-9 CLKC-5 CLKC-38 CLKC-37 CLKC-36 CLKC-35 CLKC-4 CLKC-18 CLKC-3 CLKC-2 CLKC-1 REQP-1959 LUTAR-1 HPDR-1 NTCN-1 CKLD-2 CKLD-1 DPIR-1 CKBF-1 SYNTH-14 SYNTH-13 SYNTH-12 SYNTH-11 SYNTH-10 SYNTH-9 SYNTH-16 SYNTH-15 SYNTH-6 SYNTH-5 SYNTH-4}
+Command: report_methodology -name ultrafast_methodology_1 -rpx C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/ultrafast_methodology_1.rpx -checks {PDRC-204 PDRC-190 TIMING-43 TIMING-42 TIMING-41 TIMING-40 TIMING-39 TIMING-38 TIMING-37 TIMING-36 TIMING-35 TIMING-34 TIMING-33 TIMING-32 TIMING-31 TIMING-30 TIMING-29 TIMING-28 TIMING-27 TIMING-26 TIMING-25 TIMING-24 TIMING-23 TIMING-22 TIMING-21 TIMING-20 TIMING-19 TIMING-18 TIMING-17 TIMING-16 TIMING-15 TIMING-14 TIMING-13 TIMING-12 TIMING-11 TIMING-10 TIMING-9 TIMING-8 TIMING-7 TIMING-6 TIMING-5 TIMING-4 TIMING-3 TIMING-2 TIMING-1 XDCV-2 XDCV-1 XDCH-2 XDCH-1 XDCC-8 XDCC-7 XDCC-6 XDCC-5 XDCC-4 XDCC-3 XDCC-2 XDCC-1 XDCB-5 XDCB-4 XDCB-3 XDCB-2 XDCB-1 CLKC-54 CLKC-53 CLKC-9 CLKC-5 CLKC-38 CLKC-37 CLKC-36 CLKC-35 CLKC-4 CLKC-18 CLKC-3 CLKC-2 CLKC-1 REQP-1959 LUTAR-1 HPDR-1 NTCN-1 CKLD-2 CKLD-1 DPIR-1 CKBF-1 SYNTH-14 SYNTH-13 SYNTH-12 SYNTH-11 SYNTH-10 SYNTH-9 SYNTH-16 SYNTH-15 SYNTH-6 SYNTH-5 SYNTH-4}
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+report_methodology completed successfully
+current_design synth_1
+report_power -name {power_1}
+Command: report_power -name power_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+1 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+current_design impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_3
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+current_design synth_1
+current_design impl_1
+current_design synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+current_design impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_4
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_5
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_6
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+current_design synth_1
+close_design
+launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/constrs_1/new/modulator_constraint.xdc]
+Finished Parsing XDC File [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/constrs_1/new/modulator_constraint.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3011.953 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-26] write_vhdl -mode funcsim -nolib -force -file "C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/synth/func/xsim/QAM_Hierarchical_func_synth.vhd"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/synth/func/xsim/QAM_Hierarchical_func_synth.vhd
+INFO: [SIM-utils-54] Inspecting design source files for 'QAM_Hierarchical' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/synth/func/xsim'
+"xvhdl --incr --relax -prj QAM_Hierarchical_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/synth/func/xsim/QAM_Hierarchical_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PhaseGenerator'
+INFO: [VRFC 10-3107] analyzing entity 'ddfs_lut_4096'
+INFO: [VRFC 10-3107] analyzing entity 'ddfs_lut_4096_0'
+INFO: [VRFC 10-3107] analyzing entity 'qam_mapper'
+INFO: [VRFC 10-3107] analyzing entity 'ddfs'
+INFO: [VRFC 10-3107] analyzing entity 'qam_mod'
+INFO: [VRFC 10-3107] analyzing entity 'QAM_Hierarchical'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/synth/func/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto edcd49cc49ab4e42907617f62b747db4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot QAM_Hierarchical_func_synth xil_defaultlib.QAM_Hierarchical -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture obuf_v of entity unisim.OBUF [\OBUF(1,9)(1,7)(1,4)\]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
+Compiling architecture fdce_v of entity unisim.FDCE [fdce_default]
+Compiling architecture carry4_v of entity unisim.CARRY4 [carry4_default]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000011101111000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11101000100010000001...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10010110")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101000000101110001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111010001110...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11101000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000011101110111")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000111111111111")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10010011010100111001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10001100011100110011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00011111111000000110...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11001100110011001111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101111101000001100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00110000110011000011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111111000100001100...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11111000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111101101011011111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00110100110011001111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01010101110110010101...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01000000000010100000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000001001100111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111110000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01010101010101010111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00110011001100110011...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000111")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10000000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00110011000000001111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111111111101011111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000001010100000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000001100000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01010101010101010101...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11110101111101011111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010101010101010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01010101101010100100...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111011110010110011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111000101110111011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101111101000000011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10001000111111111000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111100110011001100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111000101110111011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111100001100111011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111110110011000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11110000111000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10101010100000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000101...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11101010101010101010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010101010101011111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11111110")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101110111010101000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0111111111111100")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01111111111111110111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111111101010")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11101010000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00001111000011110011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111000111111111011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11001100110000001100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01010101010101010101...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01011111010111110101...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01010101010101010101...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11101110111010101110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010100000001010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01010101010111110101...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00110011011111111111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000011111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11110000100000001111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00111111001111110011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10100000111111111010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00010001000100010001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111011111110111111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111100110011001011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111000111111111011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00001111101011110000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111000110011000011...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00011111")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01010101010101010101...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101111101011111010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111100001000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10001011100010001011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01010101011101110111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111000000000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01000101111010100101...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111111111110")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00110111011101110111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111111001000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111011101110000000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11100100")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00101111111011111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000100000110000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101010101010100000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010101010101010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111000101110001100...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1011100010001000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01010101011111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11101010010001011111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111100000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00010000000100010001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10001011100010001011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101000100010001000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00111011001111110011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01110100011101110111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111000000000001011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01000100010101010101...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11101110111011100000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000001111111")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1110101000000000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111111100000001111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11011111111111110000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111100000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0001010111111111")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111111...]
+Compiling architecture muxf7_v of entity unisim.MUXF7 [muxf7_default]
+Compiling architecture muxf8_v of entity unisim.MUXF8 [muxf8_default]
+Compiling architecture structure of entity xil_defaultlib.ddfs_lut_4096 [ddfs_lut_4096_default]
+Compiling architecture structure of entity xil_defaultlib.ddfs_lut_4096_0 [ddfs_lut_4096_0_default]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0001")(0,3)\]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.PhaseGenerator [phasegenerator_default]
+Compiling architecture structure of entity xil_defaultlib.ddfs [ddfs_default]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0111111111111111")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0111000000000000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111011101110111")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0111100010001000")(0...]
+Compiling architecture structure of entity xil_defaultlib.qam_mapper [qam_mapper_default]
+Compiling architecture structure of entity xil_defaultlib.qam_mod [qam_mod_default]
+Compiling architecture structure of entity xil_defaultlib.qam_hierarchical
+Built simulation snapshot QAM_Hierarchical_func_synth
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/synth/func/xsim/xsim.dir/QAM_Hierarchical_func_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/synth/func/xsim/xsim.dir/QAM_Hierarchical_func_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jun 14 16:22:27 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Jun 14 16:22:27 2019...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 3011.953 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "QAM_Hierarchical_func_synth -key {Post-Synthesis:sim_1:Functional:QAM_Hierarchical} -tclbatch {QAM_Hierarchical.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source QAM_Hierarchical.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'QAM_Hierarchical_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 3011.953 ; gain = 0.000
+current_sim simulation_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'QAM_Hierarchical' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj QAM_Hierarchical_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'qam_mapper'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto edcd49cc49ab4e42907617f62b747db4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot QAM_Hierarchical_behav xil_defaultlib.QAM_Hierarchical -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behaviourl of entity xil_defaultlib.qam_mapper [qam_mapper_default]
+Compiling architecture arch of entity xil_defaultlib.PhaseGenerator [phasegenerator_default]
+Compiling architecture bhv of entity xil_defaultlib.ddfs_lut_4096 [ddfs_lut_4096_default]
+Compiling architecture struct of entity xil_defaultlib.ddfs [ddfs_default]
+Compiling architecture rtl of entity xil_defaultlib.qam_mod [qam_mod_default]
+Compiling architecture data_flow of entity xil_defaultlib.fullAdder [fulladder_default]
+Compiling architecture struct of entity xil_defaultlib.FA_N [\FA_N(n=8)\]
+Compiling architecture behaviourl of entity xil_defaultlib.qam_hierarchical
+Built simulation snapshot QAM_Hierarchical_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "QAM_Hierarchical_behav -key {Behavioral:sim_1:Functional:QAM_Hierarchical} -tclbatch {QAM_Hierarchical.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source QAM_Hierarchical.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'QAM_Hierarchical_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3011.953 ; gain = 0.000
+current_design impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_7
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+ERROR: [Vivado 12-106] *** Exception: java.lang.NullPointerException (See C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/vivado_pid6456.debug)
+save_constraints
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3011.953 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Fri Jun 14 16:29:23 2019] Launched synth_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1/runme.log
+current_design synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Fri Jun 14 16:31:22 2019] Launched synth_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1/runme.log
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Fri Jun 14 16:36:00 2019] Launched synth_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1/runme.log
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_3
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+refresh_design
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/constrs_1/new/modulator_constraint.xdc]
+Finished Parsing XDC File [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/constrs_1/new/modulator_constraint.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+save_constraints
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3023.066 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Fri Jun 14 16:37:31 2019] Launched synth_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1/runme.log
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+launch_runs impl_1 -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jun 14 16:38:26 2019] Launched impl_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/impl_1/runme.log
+current_design impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_8
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+save_constraints -force
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3023.066 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Fri Jun 14 16:40:21 2019] Launched synth_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1/runme.log
+current_design synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+launch_runs impl_1 -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jun 14 16:41:25 2019] Launched impl_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/impl_1/runme.log
+current_design impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_9
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_power -name {power_2}
+Command: report_power -name power_2
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+save_constraints -force
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3039.066 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Fri Jun 14 16:45:47 2019] Launched synth_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jun 14 16:49:18 2019] Launched impl_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/impl_1/runme.log
+current_design synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_3
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+current_design impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_10
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_power -name {power_3}
+Command: report_power -name power_3
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+current_design synth_1
+refresh_design
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/constrs_1/new/modulator_constraint.xdc]
+Finished Parsing XDC File [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/constrs_1/new/modulator_constraint.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+save_constraints
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3040.059 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Fri Jun 14 16:55:28 2019] Launched synth_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jun 14 16:56:13 2019] Launched impl_1...
+Run output will be captured here: C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/impl_1/runme.log
+current_design impl_1
+refresh_design
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.089 . Memory (MB): peak = 3040.059 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.090 . Memory (MB): peak = 3040.059 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 3040.059 ; gain = 0.000
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+current_design synth_1
+report_power -name {power_1}
+Command: report_power -name power_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+1 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+add_files -norecurse -scan_for_includes C:/Users/rewal/Desktop/RTL_QAM-master/ghdl_src_DUT/tb_QAM_Hierarchical.vhd
+import_files -norecurse C:/Users/rewal/Desktop/RTL_QAM-master/ghdl_src_DUT/tb_QAM_Hierarchical.vhd
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'QAM_Hierarchical' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj QAM_Hierarchical_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto edcd49cc49ab4e42907617f62b747db4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot QAM_Hierarchical_behav xil_defaultlib.QAM_Hierarchical -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "QAM_Hierarchical_behav -key {Behavioral:sim_1:Functional:QAM_Hierarchical} -tclbatch {QAM_Hierarchical.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source QAM_Hierarchical.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'QAM_Hierarchical_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3487.480 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation -mode post-implementation -type functional
+INFO: [Vivado 12-5682] Launching post-implementation functional simulation in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/impl/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-33] write_vhdl -mode funcsim -nolib -force -file "C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/impl/func/xsim/tb_QAM_Hierarchical_func_impl.vhd"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/impl/func/xsim/tb_QAM_Hierarchical_func_impl.vhd
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_QAM_Hierarchical' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/impl/func/xsim'
+"xvhdl --incr --relax -prj tb_QAM_Hierarchical_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/impl/func/xsim/tb_QAM_Hierarchical_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PhaseGenerator'
+INFO: [VRFC 10-3107] analyzing entity 'ddfs_lut_4096'
+INFO: [VRFC 10-3107] analyzing entity 'ddfs_lut_4096_0'
+INFO: [VRFC 10-3107] analyzing entity 'qam_mapper'
+INFO: [VRFC 10-3107] analyzing entity 'ddfs'
+INFO: [VRFC 10-3107] analyzing entity 'qam_mod'
+INFO: [VRFC 10-3107] analyzing entity 'QAM_Hierarchical'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/impl/func/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto edcd49cc49ab4e42907617f62b747db4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_QAM_Hierarchical_func_impl xil_defaultlib.tb_QAM_Hierarchical -log elaborate.log 
+Using 2 slave threads.
+ERROR: [XSIM 43-3225] Cannot find design unit xil_defaultlib.tb_QAM_Hierarchical in library work located at xsim.dir/work.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/impl/func/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/impl/func/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+current_design synth_1
+close_design
+launch_simulation -mode post-synthesis -type timing
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/constrs_1/new/modulator_constraint.xdc]
+Finished Parsing XDC File [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/constrs_1/new/modulator_constraint.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3487.480 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/synth/timing/xsim/tb_QAM_Hierarchical_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/synth/timing/xsim/tb_QAM_Hierarchical_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/synth/timing/xsim/tb_QAM_Hierarchical_time_synth.v
+INFO: [SIM-utils-37] SDF generated:C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/synth/timing/xsim/tb_QAM_Hierarchical_time_synth.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_QAM_Hierarchical' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/synth/timing/xsim'
+"xvlog --incr --relax -prj tb_QAM_Hierarchical_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/synth/timing/xsim/tb_QAM_Hierarchical_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PhaseGenerator
+INFO: [VRFC 10-311] analyzing module QAM_Hierarchical
+INFO: [VRFC 10-311] analyzing module ddfs
+INFO: [VRFC 10-311] analyzing module ddfs_lut_4096
+INFO: [VRFC 10-311] analyzing module ddfs_lut_4096_0
+INFO: [VRFC 10-311] analyzing module qam_mapper
+INFO: [VRFC 10-311] analyzing module qam_mod
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/synth/timing/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto edcd49cc49ab4e42907617f62b747db4 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_QAM_Hierarchical_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_QAM_Hierarchical xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+ERROR: [XSIM 43-3225] Cannot find design unit xil_defaultlib.tb_QAM_Hierarchical in library work located at xsim.dir/work.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/synth/timing/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/synth/timing/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3487.480 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+export_ip_user_files -of_objects  [get_files C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/tb_QAM_Hierarchical.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/tb_QAM_Hierarchical.vhd
+update_compile_order -fileset sources_1
+launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/impl/timing/xsim/QAM_Hierarchical_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/impl/timing/xsim/QAM_Hierarchical_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/impl/timing/xsim/QAM_Hierarchical_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/impl/timing/xsim/QAM_Hierarchical_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'QAM_Hierarchical' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj QAM_Hierarchical_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/impl/timing/xsim/QAM_Hierarchical_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PhaseGenerator
+INFO: [VRFC 10-311] analyzing module QAM_Hierarchical
+INFO: [VRFC 10-311] analyzing module ddfs
+INFO: [VRFC 10-311] analyzing module ddfs_lut_4096
+INFO: [VRFC 10-311] analyzing module ddfs_lut_4096_0
+INFO: [VRFC 10-311] analyzing module qam_mapper
+INFO: [VRFC 10-311] analyzing module qam_mod
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/impl/timing/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto edcd49cc49ab4e42907617f62b747db4 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot QAM_Hierarchical_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.QAM_Hierarchical xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "QAM_Hierarchical_time_impl.sdf", for root module "QAM_Hierarchical".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "QAM_Hierarchical_time_impl.sdf", for root module "QAM_Hierarchical".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.FDCE_default
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.MUXF7
+Compiling module simprims_ver.MUXF8
+Compiling module xil_defaultlib.ddfs_lut_4096
+Compiling module xil_defaultlib.ddfs_lut_4096_0
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.PhaseGenerator
+Compiling module xil_defaultlib.ddfs
+Compiling module xil_defaultlib.qam_mapper
+Compiling module xil_defaultlib.qam_mod
+Compiling module xil_defaultlib.QAM_Hierarchical
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot QAM_Hierarchical_time_impl
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/impl/timing/xsim/xsim.dir/QAM_Hierarchical_time_impl/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/impl/timing/xsim/xsim.dir/QAM_Hierarchical_time_impl/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jun 14 17:08:29 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Jun 14 17:08:29 2019...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 3487.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "QAM_Hierarchical_time_impl -key {Post-Implementation:sim_1:Timing:QAM_Hierarchical} -tclbatch {QAM_Hierarchical.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source QAM_Hierarchical.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'QAM_Hierarchical_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 3487.480 ; gain = 0.000
+create_wave_config
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 3487.480 ; gain = 0.000
+current_sim simulation_4
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 14 17:10:07 2019...

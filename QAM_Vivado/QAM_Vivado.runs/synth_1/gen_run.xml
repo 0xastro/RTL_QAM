@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1560524128">
+  <File Type="PA-TCL" Name="QAM_Hierarchical.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="QAM_Hierarchical_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="QAM_Hierarchical_reports.tcl"/>
+  <File Type="RDS-RDS" Name="QAM_Hierarchical.vds"/>
+  <File Type="RDS-UTIL" Name="QAM_Hierarchical_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="QAM_Hierarchical_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="QAM_Hierarchical.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="QAM_Hierarchical_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="QAM_Hierarchical_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/ghdl_src_DUT/FA_N.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ghdl_src_DUT/FA_N.vhd"/>
+        <Attr Name="ImportTime" Val="1560445142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ghdl_src_DUT/PhaseGenerator.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ghdl_src_DUT/PhaseGenerator.vhd"/>
+        <Attr Name="ImportTime" Val="1560445142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ghdl_src_DUT/ddfs.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ghdl_src_DUT/ddfs.vhd"/>
+        <Attr Name="ImportTime" Val="1560445142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ghdl_src_DUT/ddfs_lut_4096.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ghdl_src_DUT/ddfs_lut_4096.vhd"/>
+        <Attr Name="ImportTime" Val="1560445142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ghdl_src_DUT/full_adder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ghdl_src_DUT/full_adder.vhd"/>
+        <Attr Name="ImportTime" Val="1560445142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ghdl_src_DUT/qam_mapper.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ghdl_src_DUT/qam_mapper.vhd"/>
+        <Attr Name="ImportTime" Val="1560445142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ghdl_src_DUT/qam_mod.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ghdl_src_DUT/qam_mod.vhd"/>
+        <Attr Name="ImportTime" Val="1560445142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ghdl_src_DUT/IQ_Adder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ghdl_src_DUT/IQ_Adder.vhd"/>
+        <Attr Name="ImportTime" Val="1560514928"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="QAM_Hierarchical"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/modulator_constraint.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/modulator_constraint.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,393 @@
+
+*** Running vivado
+    with args -log QAM_Hierarchical.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source QAM_Hierarchical.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source QAM_Hierarchical.tcl -notrace
+Command: synth_design -top QAM_Hierarchical -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9784 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 430.836 ; gain = 98.563
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'QAM_Hierarchical' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/IQ_Adder.vhd:31]
+INFO: [Synth 8-3491] module 'qam_mod' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:11' bound to instance 'u_qam_mod' of component 'qam_mod' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/IQ_Adder.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'qam_mod' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:26]
+INFO: [Synth 8-3491] module 'qam_mapper' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mapper.vhd:27' bound to instance 'u_mapper_qam' of component 'qam_mapper' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'qam_mapper' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mapper.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'qam_mapper' (1#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mapper.vhd:37]
+INFO: [Synth 8-3491] module 'ddfs' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd:19' bound to instance 'u_ddfs_osc' of component 'ddfs' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'ddfs' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd:34]
+INFO: [Synth 8-3491] module 'PhaseGenerator' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/PhaseGenerator.vhd:23' bound to instance 'PHASE_ACCUMLATOR' of component 'PhaseGenerator' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'PhaseGenerator' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/PhaseGenerator.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'PhaseGenerator' (2#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/PhaseGenerator.vhd:38]
+INFO: [Synth 8-3491] module 'ddfs_lut_4096' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs_lut_4096.vhd:20' bound to instance 'LUT_4096_SIN' of component 'ddfs_lut_4096' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'ddfs_lut_4096' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs_lut_4096.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'ddfs_lut_4096' (3#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs_lut_4096.vhd:28]
+INFO: [Synth 8-3491] module 'ddfs_lut_4096' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs_lut_4096.vhd:20' bound to instance 'LUT_4096_COS' of component 'ddfs_lut_4096' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd:129]
+INFO: [Synth 8-256] done synthesizing module 'ddfs' (4#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/ddfs.vhd:34]
+WARNING: [Synth 8-3848] Net phase_ctr in module/entity qam_mod does not have driver. [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'qam_mod' (5#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:26]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'FA_N' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:7' bound to instance 'u_IQ_Adder' of component 'FA_N' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/IQ_Adder.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'FA_N' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:18]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'fullAdder' (6#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:18]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-3491] module 'fullAdder' declared at 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/full_adder.vhd:7' bound to instance 'i_fa' of component 'fullAdder' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'FA_N' (7#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/FA_N.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'QAM_Hierarchical' (8#1) [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/IQ_Adder.vhd:31]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[11]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[10]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[9]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[8]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[7]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[6]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[5]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[4]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[3]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[2]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[1]
+WARNING: [Synth 8-3331] design PhaseGenerator has unconnected port phase_offset[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 487.898 ; gain = 155.625
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[11] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[10] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[9] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[8] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[7] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[6] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[5] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[4] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[3] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[2] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[1] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+WARNING: [Synth 8-3295] tying undriven pin u_ddfs_osc:phase_s[0] to constant 0 [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/qam_mod.vhd:108]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 487.898 ; gain = 155.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 487.898 ; gain = 155.625
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/constrs_1/new/modulator_constraint.xdc]
+Finished Parsing XDC File [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/constrs_1/new/modulator_constraint.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 826.762 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 826.773 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 826.773 ; gain = 0.012
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 826.773 ; gain = 494.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 826.773 ; gain = 494.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 826.773 ; gain = 494.500
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'phase_offset_d_reg' [C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.srcs/sources_1/imports/ghdl_src_DUT/PhaseGenerator.vhd:51]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 826.773 ; gain = 494.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 8     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module qam_mapper 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 2     
+Module PhaseGenerator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+Module ddfs 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 2     
+Module qam_mod 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 4     
+Module fullAdder 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'u_qam_mod/u_ddfs_osc/PHASE_ACCUMLATOR/phase_offset_d_reg[11]' (LD) to 'u_qam_mod/u_ddfs_osc/PHASE_ACCUMLATOR/phase_offset_d_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_qam_mod/u_ddfs_osc/PHASE_ACCUMLATOR/phase_offset_d_reg[10]' (LD) to 'u_qam_mod/u_ddfs_osc/PHASE_ACCUMLATOR/phase_offset_d_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_qam_mod/u_ddfs_osc/PHASE_ACCUMLATOR/phase_offset_d_reg[0]' (LD) to 'u_qam_mod/u_ddfs_osc/PHASE_ACCUMLATOR/phase_offset_d_reg[2]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\u_qam_mod/u_ddfs_osc/PHASE_ACCUMLATOR/phase_offset_d_reg[1] )
+INFO: [Synth 8-3886] merging instance 'u_qam_mod/u_ddfs_osc/PHASE_ACCUMLATOR/phase_offset_d_reg[2]' (LD) to 'u_qam_mod/u_ddfs_osc/PHASE_ACCUMLATOR/phase_offset_d_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_qam_mod/u_ddfs_osc/PHASE_ACCUMLATOR/phase_offset_d_reg[3]' (LD) to 'u_qam_mod/u_ddfs_osc/PHASE_ACCUMLATOR/phase_offset_d_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_qam_mod/u_ddfs_osc/PHASE_ACCUMLATOR/phase_offset_d_reg[4]' (LD) to 'u_qam_mod/u_ddfs_osc/PHASE_ACCUMLATOR/phase_offset_d_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_qam_mod/u_ddfs_osc/PHASE_ACCUMLATOR/phase_offset_d_reg[5]' (LD) to 'u_qam_mod/u_ddfs_osc/PHASE_ACCUMLATOR/phase_offset_d_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_qam_mod/u_ddfs_osc/PHASE_ACCUMLATOR/phase_offset_d_reg[6]' (LD) to 'u_qam_mod/u_ddfs_osc/PHASE_ACCUMLATOR/phase_offset_d_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_qam_mod/u_ddfs_osc/PHASE_ACCUMLATOR/phase_offset_d_reg[7]' (LD) to 'u_qam_mod/u_ddfs_osc/PHASE_ACCUMLATOR/phase_offset_d_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_qam_mod/u_ddfs_osc/PHASE_ACCUMLATOR/phase_offset_d_reg[8]' (LD) to 'u_qam_mod/u_ddfs_osc/PHASE_ACCUMLATOR/phase_offset_d_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_qam_mod/u_ddfs_osc/PHASE_ACCUMLATOR/phase_offset_d_reg[9] )
+INFO: [Synth 8-3886] merging instance 'u_qam_mod/u_mapper_qam/Q_symbols_reg[0]' (FDC) to 'u_qam_mod/u_mapper_qam/I_symbols_reg[0]'
+WARNING: [Synth 8-3332] Sequential element (u_qam_mod/u_ddfs_osc/PHASE_ACCUMLATOR/phase_offset_d_reg[9]) is unused and will be removed from module QAM_Hierarchical.
+WARNING: [Synth 8-3332] Sequential element (u_qam_mod/u_ddfs_osc/PHASE_ACCUMLATOR/phase_offset_d_reg[1]) is unused and will be removed from module QAM_Hierarchical.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 826.773 ; gain = 494.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-----------------+------------------------------------------+---------------+----------------+
+|Module Name      | RTL Object                               | Depth x Width | Implemented As | 
++-----------------+------------------------------------------+---------------+----------------+
+|ddfs_lut_4096    | lut[0]                                   | 4096x6        | LUT            | 
+|QAM_Hierarchical | u_qam_mod/u_ddfs_osc/LUT_4096_COS/lut[0] | 4096x6        | LUT            | 
+|QAM_Hierarchical | u_qam_mod/u_ddfs_osc/LUT_4096_SIN/lut[0] | 4096x6        | LUT            | 
++-----------------+------------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 826.773 ; gain = 494.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 826.773 ; gain = 494.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 835.086 ; gain = 502.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 835.086 ; gain = 502.813
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 835.086 ; gain = 502.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 835.086 ; gain = 502.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 835.086 ; gain = 502.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 835.086 ; gain = 502.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 835.086 ; gain = 502.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    13|
+|3     |LUT1   |     2|
+|4     |LUT2   |    33|
+|5     |LUT3   |    19|
+|6     |LUT4   |    35|
+|7     |LUT5   |    68|
+|8     |LUT6   |   174|
+|9     |MUXF7  |    34|
+|10    |MUXF8  |     8|
+|11    |FDCE   |    83|
+|12    |IBUF   |    16|
+|13    |OBUF   |     8|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------+----------------+------+
+|      |Instance               |Module          |Cells |
++------+-----------------------+----------------+------+
+|1     |top                    |                |   494|
+|2     |  u_qam_mod            |qam_mod         |   469|
+|3     |    u_ddfs_osc         |ddfs            |   409|
+|4     |      LUT_4096_COS     |ddfs_lut_4096   |   154|
+|5     |      LUT_4096_SIN     |ddfs_lut_4096_0 |   154|
+|6     |      PHASE_ACCUMLATOR |PhaseGenerator  |    75|
+|7     |    u_mapper_qam       |qam_mapper      |    13|
++------+-----------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 835.086 ; gain = 502.813
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 835.086 ; gain = 163.938
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 835.086 ; gain = 502.813
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 840.719 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+55 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 840.719 ; gain = 521.453
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 840.719 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/rewal/Desktop/RTL_QAM-master/QAM_Vivado/QAM_Vivado.runs/synth_1/QAM_Hierarchical.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file QAM_Hierarchical_utilization_synth.rpt -pb QAM_Hierarchical_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 14 16:56:05 2019...
