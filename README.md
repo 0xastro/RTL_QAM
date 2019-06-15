@@ -1,12 +1,6 @@
 # RTL_QAM
-The project is designed using VHDL to realise the 4-QAM modulation.
-#### Design Software:  
-- GHDL 
-- Scansion
-- Xilinx Vivado Webpack
-
-# RTL_QAM
 The project is designed using VHDL to realise the M-QAM modulation.
+
 #### Design Software:  
 - GHDL 
 - Scansion
