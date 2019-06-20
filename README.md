@@ -1,7 +1,7 @@
 # RTL_QAM
 The project is designed using VHDL to realise the M-QAM modulation.
 
-#### Design Software:  
+#### Design Softwares:  
 - GHDL 
 - Scansion
 - Xilinx Vivado Webpack
@@ -22,3 +22,9 @@ The project is designed using VHDL to realise the M-QAM modulation.
     ├── waveforms               # vcd files to view waveforms using GTKWave or Scnasion
     └── README.md
 
+#### Features to be Included:  
+- [ADD] GLFSR Module to generate inpute bit streams [Input Frames] 
+- [MOD] QAM Mapper Module to map up to 256 Symbols 
+- [Test] Test the System aginst the IP-Core build in Module
+
+> Feel free to contribute to this project ;)
