@@ -47,11 +47,36 @@ bk_q=fi(bk, sign, w_len, f_len);
 %ak_q=zeros(size(ak));
 ak_q=fi(ak, sign, w_len, f_len);
 
-%to get object properties i.e int16, int32, bin
-ak_q_bin=ak_q.bin;
-ak_q_int16=ak_q.int16;
 
+
+%to get object properties i.e int16, int32, bin
+fprintf("\n\n*******************************************\n");
+fprintf("[bk:Nominator]\n");
+fprintf("*******************************************\n");
+fprintf("Un-Quantized Values \n");
+disp(bk);
+fprintf(".............................. \n");
+fprintf("[Quantization] Displaying quantized object properties \n");
+disp(bk_q);
+fprintf("[Nominator bk] Quantized Values in binary representation: \n 16-bit width, 10 fractional bits\n");
+bk_q_bin=bk_q.bin;
+disp(bk_q.bin);
+
+
+
+fprintf("\n\n*******************************************\n");
+fprintf("[ak:Denominator]\n");
+fprintf("*******************************************\n");
+fprintf("[Un-Quantized Values \n");
+disp(ak);
+fprintf(".............................. \n");
+fprintf("[Quantization] Displaying quantized object properties \n");
+disp(ak_q);
+fprintf("[Denominator ak] Quantized Values in binary representation: \n 16-bit width, 10 fractional bits\n");
+ak_q_bin=ak_q.bin;
+disp(ak_q.bin);
 
 %% Another Method to verify, or floating point operations
 % q = quantizer('fixed', 'Round', 'Saturate', [w_len f_len]);
 % y=quantize(q, [ak(1,:)]);
+
