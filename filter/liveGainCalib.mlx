@@ -1,0 +1,155 @@
+
+clc; clear all; close all;
+
+
+%numerator Coefficients
+C = [ 1    0          -1
+       1    0.712824    1 
+       1    0.05026     1
+       1    -1.995649   1
+     ];
+
+%Denominator Coefficients
+A = [ 1    -1.2        0.294975
+       1    -0.413853   0.505521 
+       1    -0.355163   0.82
+       1    -1.951062   0.9604
+     ];
+a1=A(1,:);
+a2=A(2,:);
+a3=A(3,:);
+a4=A(4,:);
+
+c1=C(1,:);
+c2=C(2,:);
+c3=C(3,:);
+c4=C(4,:);
+
+%Filter sections 1 to 4.
+% b0, b1, b2, 1, a0, a1
+sos1=[ c1 a1 ];
+sos2=[ c2 a2 ];
+sos3=[ c3 a3  ];
+sos4=[ c4 a4 ];
+
+%sosV=[sos1 sos2 sos3 sos4];
+sosV=[sos3 sos4 sos2 sos1];
+
+%Coefficients Quantization
+sos1q=Quantize('round',sos1,8);
+sos2q=Quantize('round',sos2,8);
+sos3q=Quantize('round',sos3,8);
+sos4q=Quantize('round',sos4,8);
+
+%sosVq=[sos1 sos2 sos3 sos4];
+
+sosV=[sos1 sos2 sos3 sos4];
+sosVq=[sos1q sos2q sos3q sos4q];
+
+
+g1 = 0.38; % @g Slider with min=0, max=1, step=0.01
+g2 = 0.4; % @r Slider with min=0, max=1, step=0.01
+g3 = 0.78; ; % @b Slider with min=0, max=1, step=0.01
+g4 = 1; ; % @y Slider with min=0, max=1, step=0.01
+
+disp_sos(sos1q,g1,sos2q,g2,sos3q,g3,sos4q,g4);
+
+
+
+
+
+function disp_sos(sos1,b1,sos2,b2,sos3,b3,sos4,b4)
+% Displays (single-sided) spectrum of four filters
+% decribed in MATLAB sos (second-order section) format
+% sos1 is displayed in green
+% sos2 is described in red
+% sos3 is described in blue
+% sos4 is described in yellow
+% b1, b2, b3 and b4 are the overall gain factors
+% corresponding to sos1, sos2, sos3, and sos4
+
+
+updB=[0.5, 0.5, -40, -40];
+upnu=[0, 0.25, 0.25, 0.5];
+lowdB=[-0.5, -0.5, -60];
+lownu=[0, 0.125, 0.125];
+
+ 
+nu=0:1/1024:0.5;
+ns=size(sos1,1);
+H1=b1*ones(size(nu));
+for i=1:ns
+   H1=H1.*freqz(sos1(i,1:3),sos1(i,4:6),2*pi*nu);
+end
+ns=size(sos2,1);
+H2=b2*ones(size(nu));
+for i=1:ns
+   H2=H2.*freqz(sos2(i,1:3),sos2(i,4:6),2*pi*nu);
+end
+
+
+H3=b3*ones(size(nu));
+for i=1:ns
+   H3=H3.*freqz(sos3(i,1:3),sos3(i,4:6),2*pi*nu);
+end
+ns=size(sos4,1);
+H4=b4*ones(size(nu));
+for i=1:ns
+   H4=H4.*freqz(sos4(i,1:3),sos4(i,4:6),2*pi*nu);
+end
+
+
+plot(nu,20*log10(abs(H1)),'g',nu,20*log10(abs(H2)),'r',nu,20*log10(abs(H3)),'b', nu,20*log10(abs(H4)),'y')
+xlabel('Normalised Frequency');
+ylabel('Magnitude, dB');
+hold on
+plot(upnu, updB,':red', lownu,lowdB, ':red');
+
+legend('sos1', 'sos2', 'sos3', 'sos4', 'Location', 'SouthEast')
+
+axis([0,0.5,-60,10]);
+grid
+
+
+end
+
+function [out]=Quantize(type,in,fraction)
+%
+% QUANTIZE precise rounding function.
+%
+%    type = type of rounding performed
+%         = 'truncate' = rounds towards -infinity
+%         = 'round' = rounds to nearest;
+%                     if halfway, rounds towards +infinity
+%         = 'round-to-zero' = rounds towards zero
+%         = 'convergent' = round to nearest;
+%                                   if halfway rounds towards nearest even
+%
+%    in = unquantized input value
+%
+%    fraction = 2^ number of bits in the fraction remaining after quantization
+%
+%    out = quantized output
+%
+x=fraction.*in;
+if strcmp(type,'truncate')
+  out=floor(x)./fraction;
+elseif strcmp(type,'round')
+  out=floor(x+0.5)./fraction;
+elseif strcmp(type,'round-to-zero')
+  out=fix(x)./fraction;
+elseif strcmp(type,'convergent')
+  out=floor(x+0.5);
+  for i=1:length(in)
+    if (abs(rem(x(i),1))==0.5) & (rem(out(i),2)~=0)
+      out(i)=out(i)-1;
+    end
+  end
+  out=out./fraction;
+else
+  error('Unrecognised rounding type');
+end
+
+end
+
+
